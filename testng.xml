@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Action">
+  <test thread-count="5" name="action_test.xml">
+    <classes>
+      <class name="MayMavenProject.TestMaven.ActionsClassInSelenium"/>
+    </classes>
+  </test> <!-- action_test.xml -->
+</suite> <!-- Action -->
