@@ -1,29 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-13T12:36:42 PST" name="Default suite" finished-at="2022-11-13T12:37:40 PST" duration-ms="57616">
+  <suite started-at="2023-06-28T16:50:41 PDT" name="Default suite" finished-at="2023-06-28T16:50:45 PDT" duration-ms="3801">
     <groups>
     </groups>
-    <test started-at="2022-11-13T12:36:42 PST" name="Default test" finished-at="2022-11-13T12:37:40 PST" duration-ms="57616">
-      <class name="testng.Action_class">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testng.Action_class@48f278eb]" started-at="2022-11-13T12:36:42 PST" name="setup" finished-at="2022-11-13T12:36:48 PST" duration-ms="6395" status="PASS">
+    <test started-at="2023-06-28T16:50:41 PDT" name="Default test" finished-at="2023-06-28T16:50:45 PDT" duration-ms="3801">
+      <class name="com.guru99.tests.LoginTest">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.guru99.tests.LoginTest@4659191b]" started-at="2023-06-28T16:50:41 PDT" name="preSetup" finished-at="2023-06-28T16:50:41 PDT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.guru99.tests.LoginTest@4659191b]" started-at="2023-06-28T16:50:41 PDT" name="setup" finished-at="2023-06-28T16:50:44 PDT" duration-ms="3756" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:50091/devtools/browser/fb77ca3d-806d-4f93-89e3-0b5a242a842d
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: CommonDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50091/devtools/browser/fb77ca3d-806d-4f93-89e3-0b5a242a842d
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: CommonDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:54)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:46)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:42)
+at commonLibs.CommonDriver.<init>(CommonDriver.java:28)
+at com.guru99.tests.BaseTest.setup(BaseTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_action()[pri:0, instance:testng.Action_class@48f278eb]" started-at="2022-11-13T12:36:48 PST" name="test_action" finished-at="2022-11-13T12:37:05 PST" duration-ms="17018" status="PASS">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:com.guru99.tests.LoginTest@4659191b]" started-at="2023-06-28T16:50:44 PDT" name="set_up" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1687996244997" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_action -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testng.Action_class@48f278eb]" started-at="2022-11-13T12:37:05 PST" name="setup" finished-at="2022-11-13T12:37:09 PST" duration-ms="3435" status="PASS">
+        </test-method> <!-- set_up -->
+        <test-method signature="verifyUserLoginWithCredentials()[pri:0, instance:com.guru99.tests.LoginTest@4659191b]" started-at="2023-06-28T16:50:44 PDT" name="verifyUserLoginWithCredentials" finished-at="2023-06-28T16:50:44 PDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:50091/devtools/browser/fb77ca3d-806d-4f93-89e3-0b5a242a842d
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: CommonDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:50091/devtools/browser/fb77ca3d-806d-4f93-89e3-0b5a242a842d
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: CommonDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:54)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:46)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:42)
+at commonLibs.CommonDriver.<init>(CommonDriver.java:28)
+at com.guru99.tests.BaseTest.setup(BaseTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_drag_drop()[pri:0, instance:testng.Action_class@48f278eb]" started-at="2022-11-13T12:37:09 PST" name="test_drag_drop" finished-at="2022-11-13T12:37:40 PST" duration-ms="30717" status="PASS">
+        </test-method> <!-- verifyUserLoginWithCredentials -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:com.guru99.tests.LoginTest@4659191b]" started-at="2023-06-28T16:50:45 PDT" name="takeScreenShot" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1687996245003" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_drag_drop -->
-      </class> <!-- testng.Action_class -->
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:com.guru99.tests.LoginTest@4659191b]" started-at="2023-06-28T16:50:45 PDT" name="closeDown" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1687996245006" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- com.guru99.tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.TestAnnotations">
+      <class name="com.guru99.tests.LoginTest">
         <methods>
+          <include name="verifyUserLoginWithCredentials"/>
+          <include name="closeDown"/>
+          <include name="preSetup"/>
+          <include name="takeScreenShot"/>
           <include name="setup"/>
-          <include name="login_functionality"/>
-          <include name="close_driver"/>
+          <include name="set_up"/>
         </methods>
-      </class> <!-- testng.TestAnnotations -->
+      </class> <!-- com.guru99.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

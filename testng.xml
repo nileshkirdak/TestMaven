@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Action">
-  <test thread-count="5" name="action_test.xml">
+<suite name="Suite">
+  <test thread-count="5" name="LoginTest.xml">
+  
+  <parameter name="userID" value="mngr455786"></parameter>
+  <parameter name="userPassword" value="mAvatun"></parameter>
     <classes>
-      <class name="MayMavenProject.TestMaven.ActionsClassInSelenium"/>
+      <class name="com.guru99.tests.LoginTest"/>
     </classes>
-  </test> <!-- action_test.xml -->
-</suite> <!-- Action -->
+  </test> <!-- LoginTest.xml -->
+</suite> <!-- Suite -->
